@@ -1,9 +1,9 @@
-import "../css/awa.css";
+import "../css/ose.css";
 
 import { ScrollObserver } from "./libs/scrollObserver.js";
 const elements = document.querySelectorAll("*");
 
-export default class AWA {
+export default class OSE {
   static init = ({
     once = options.once,
     rootMargin = options.rootMargin,
@@ -11,10 +11,10 @@ export default class AWA {
   }) => {
     const observer = new ScrollObserver({ once, rootMargin, elementRatio });
     elements.forEach((element) => {
-      const awaProperty = element.getAttribute("data-awa");
-      if (awaProperty) {
-        element.classList.add("pre-awa-hidden");
-        observer.observe(element, awaProperty);
+      const oseProperty = element.getAttribute("data-ose");
+      if (oseProperty) {
+        element.classList.add("pre-ose-hidden");
+        observer.observe(element, oseProperty);
       }
     });
   };

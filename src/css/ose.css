@@ -1,72 +1,72 @@
-@import url("./awa-animation.css");
-.awa-hidden {
+@import url("./ose-animation.css");
+.ose-hidden {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
 }
 
-.pre-awa-hidden {
+.pre-ose-hidden {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-[data-awa='bounce'].bounce {
+[data-ose='bounce'].bounce {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   -webkit-animation: bounce 1.5s ease;
           animation: bounce 1.5s ease;
 }
 
-[data-awa='bounce-left'].bounce-left {
+[data-ose='bounce-left'].bounce-left {
   -webkit-animation: bounce-left .5s ease;
           animation: bounce-left .5s ease;
 }
 
-[data-awa='bounce-right'].bounce-right {
+[data-ose='bounce-right'].bounce-right {
   -webkit-animation: bounce-right .5s ease;
           animation: bounce-right .5s ease;
 }
 
-[data-awa='bounce-up'].bounce-up {
+[data-ose='bounce-up'].bounce-up {
   -webkit-animation: bounce-up .5s ease;
           animation: bounce-up .5s ease;
 }
 
-[data-awa='bounce-down'].bounce-down {
+[data-ose='bounce-down'].bounce-down {
   -webkit-animation: bounce-down .5s ease;
           animation: bounce-down .5s ease;
 }
 
-[data-awa='fade'].fade {
+[data-ose='fade'].fade {
   -webkit-animation: fade 1.5s ease;
           animation: fade 1.5s ease;
 }
 
-[data-awa='fade-left'].fade-left {
+[data-ose='fade-left'].fade-left {
   -webkit-animation: fade-left 1.5s ease;
           animation: fade-left 1.5s ease;
 }
 
-[data-awa='fade-right'].fade-right {
+[data-ose='fade-right'].fade-right {
   -webkit-animation: fade-right 1.5s ease;
           animation: fade-right 1.5s ease;
 }
 
-[data-awa='fade-up'].fade-up {
+[data-ose='fade-up'].fade-up {
   -webkit-animation: fade-up 1.5s ease;
           animation: fade-up 1.5s ease;
 }
 
-[data-awa='fade-down'].fade-down {
+[data-ose='fade-down'].fade-down {
   -webkit-animation: fade-down 1.5s ease;
           animation: fade-down 1.5s ease;
 }
 
-[data-awa='slide'].slide {
+[data-ose='slide'].slide {
   -webkit-animation: slide 1.5s ease;
           animation: slide 1.5s ease;
 }
-/*# sourceMappingURL=awa.css.map */
+/*# sourceMappingURL=ose.css.map */

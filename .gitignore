@@ -26,7 +26,11 @@ dist-ssr
 main.css.map
 main.scss
 main.css
-awa-animation.css.map
-awa-animation.scss
-awa.css.map
-awa.scss
+ose-animation.css.map
+ose-animation.scss
+ose.css.map
+ose.scss
+index.html
+javascript.svg
+main.js
+public

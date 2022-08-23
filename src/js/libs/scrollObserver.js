@@ -1,6 +1,6 @@
 /**
  * Observing the position of the current element who has
- * data-awa attributes
+ * data-ose attributes
  * the attributes value is set to in the class of the current element
  * so you can define your own css on your custom attributes
  */
@@ -10,19 +10,19 @@ export class ScrollObserver {
     (this.rootMargin = rootMargin), (this.elementRatio = elementRatio);
   }
 
-  observe = (element, awaProperty) => {
-    const delay = element.getAttribute("data-awa-delay");
+  observe = (element, oseProperty) => {
+    const delay = element.getAttribute("data-ose-delay");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           setTimeout(() => {
             if (entry.isIntersecting) {
-              entry.target.classList.remove("pre-awa-hidden");
-              entry.target.classList.remove("awa-hidden");
-              entry.target.classList.toggle(awaProperty);
+              entry.target.classList.remove("pre-ose-hidden");
+              entry.target.classList.remove("ose-hidden");
+              entry.target.classList.toggle(oseProperty);
               if (this.once) observer.unobserve(element);
             } else {
-              element.classList.toggle("awa-hidden");
+              element.classList.toggle("ose-hidden");
             }
           }, parseInt(delay) * 1000);
         });
@@ -37,7 +37,7 @@ export class ScrollObserver {
 }
 
 /**
- * delay work only if user set the awa-delay attributes
+ * delay work only if user set the ose-delay attributes
  * i won't add another css style for this cuz setTimeout
  * does the job :)
  */
