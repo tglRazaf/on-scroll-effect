@@ -1,6 +1,10 @@
-// import styles from '../css/awa.css'
 
-import {ScrollObserver} from './scrollObserver.js'
+
+
+
+import '../css/awa.css'
+
+import {ScrollObserver} from './libs/scrollObserver.js'
 const elements = document.querySelectorAll('*')
 
 export default class AWA {
