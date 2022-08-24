@@ -1,6 +1,7 @@
 import "../css/ose.css";
 
-import { ScrollObserver } from "./libs/scrollObserver.js";
+// @ts-ignore 
+import { ScrollObserver } from "./libs/scrollObserver.js"; 
 const elements = document.querySelectorAll("*");
 
 export default class OSE {
