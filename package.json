@@ -9,6 +9,17 @@
     "preview": "vite preview",
     "test": "echo \"No test specified\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tglRazaf/on-scroll-effect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tglRazaf/on-scroll-effect/issues"
+  },
+  "homepage": "https://github.com/tglRazaf/on-scroll-effect#readme",
   "devDependencies": {
     "vite": "^3.0.7"
   }
