@@ -8,12 +8,12 @@ element enter the DOM
 Use the package manager [npm](https://www.npmjs.com/) to install OSE.
 
 ```bash
-npm install OSE
+npm install on-scroll-effect
 ```
 
 ## Usage
 
-### On javascript
+### On javascriptu
 
 ```javascript
 import {OSE} from './index.js';
