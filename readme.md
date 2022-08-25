@@ -13,7 +13,7 @@ npm install ose-library
 
 ## Usage
 
-### On javascriptu
+### On javascript
 
 ```javascript
 import {OSE} from 'ose-library';
@@ -44,7 +44,7 @@ OSE.init({
 
 ```
 
-- Use *`data-ose-delay`* to set delay when starting animation in secondu
+- Use *`data-ose-delay`* to set delay when starting animation in second
 - Use your own css style by adding 
 
 #### Custom property in data-ose
@@ -75,3 +75,21 @@ OSE.init({
 }
 
 ```
+
+## Predefined animation
+
+    * Fade animations:
+        * fade
+        * fade-up
+        * fade-down
+        * fade-left
+        * fade-right
+
+    * Bounce animations:
+        * bounce
+        * bounce-up
+        * bounce-down
+        * bounce-left
+
+    * Slide animations:
+        * slide
