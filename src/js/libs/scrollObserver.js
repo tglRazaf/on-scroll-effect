@@ -5,9 +5,12 @@
  * so you can define your own css on your custom attributes
  */
 export class ScrollObserver {
-  constructor({ once, rootMargin, elementRatio }) {
+
+  constructor({ once, topOffset, bottomOffset, elementRatio }) {
     this.once = once;
-    (this.rootMargin = rootMargin), (this.elementRatio = elementRatio);
+    this.topOffset = topOffset, 
+    this.bottomOffset = bottomOffset
+    this.elementRatio = elementRatio
   }
 
   observe = (element, oseProperty) => {
@@ -28,7 +31,7 @@ export class ScrollObserver {
         });
       },
       {
-        rootMargin: this.rootMargin,
+        rootMargin: `${this.topOffset}px 0px ${this.bottomOffset}px 0px`,
         threshold: this.elementRatio,
       }
     );

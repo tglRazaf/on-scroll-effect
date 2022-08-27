@@ -1,16 +1,16 @@
 import "../css/ose.css";
 
-// @ts-ignore 
-import { ScrollObserver } from "./libs/scrollObserver.js"; 
+import { ScrollObserver } from "./libs/scrollObserver.js";
 const elements = document.querySelectorAll("*");
 
 export default class OSE {
   static init = ({
     once = options.once,
-    rootMargin = options.rootMargin,
+    topOffset = options.topOffset,
+    bottomOffset = options.bottomOffset,
     elementRatio = options.elementRatio,
   }) => {
-    const observer = new ScrollObserver({ once, rootMargin, elementRatio });
+    const observer = new ScrollObserver({ once, topOffset, bottomOffset, elementRatio });
     elements.forEach((element) => {
       const oseProperty = element.getAttribute("data-ose");
       if (oseProperty) {
@@ -26,6 +26,7 @@ export default class OSE {
  */
 const options = {
   once: true,
-  rootMargin: `${window.innerHeight}px 0px 0px 0px`,
+  topOffset: 0,
+  bottomOffset: 0,
   elementRatio: 1,
 };
